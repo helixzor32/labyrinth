@@ -3,7 +3,7 @@ import { Labyrinth } from './Game';
 
 class LabyrinthClient {
   constructor(rootElement) {
-    this.client = Client({ game: Labyrinth });
+    this.client = Client({ game: Labyrinth, debug: false });
     this.client.start();
     this.rootElement = rootElement;
     this.createBoard();
@@ -26,7 +26,7 @@ class LabyrinthClient {
     // Add the HTML to our app <div>.
     // We’ll use the empty <p> to display the game winner later.
     this.rootElement.innerHTML = `
-      <table>${rows.join('')}</table>
+      ${rows.join('')}
       <p class="winner"></p>
     `;
   }

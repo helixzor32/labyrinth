@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+    @apply w-full flex flex-col items-center;
+    margin-top: 10%;
+}
+
+.mainTable {
+    @apply w-1/2;
+}
+
+.cell {
+    @apply border border-black border-solid text-center;
+    width: 100px;
+    height:100px;
+}
