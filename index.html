@@ -5,13 +5,31 @@
   <meta charset="utf-8"/>
 </head>
 <body>
-  <section class="mainContainer">
-    <article id="playerHud"></article>
-    <article id="gameBoard">
-      <table id="app" class="boardGrid"></table>
-    </article>
+
+  <section class="mainHeader">
+    <header id="appControl" class="appControl">This is the app page header/control bar</header>
   </section>
+
+  <section class="mainContainer">
+
+    <div class="mainInner">
+
+      <article id="playerHudContainer" class="playerHudContainer">
+        <div id="playerHud" class="playerHud">Player 1</div>
+        <div id="playerHud" class="playerHud">Player 2</div>
+        <div id="playerHud" class="playerHud">Player 3</div>
+        <div id="playerHud" class="playerHud">Player 4</div>
+      </article>
+      <article id="gameBoard" class="gameBoard">
+        <table id="app" class="boardGrid"></table>
+      </article>
+      
+    </div>
+
+  </section>
+
   <script src="./src/App.js" type="module"></script>
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="/dist/dist.css" rel="stylesheet">
+
 </body>
 </html>
