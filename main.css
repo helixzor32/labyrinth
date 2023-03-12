@@ -6,11 +6,9 @@
     @apply w-full flex flex-col items-center;
     margin-top: 10%;
 }
-
-.mainTable {
+.boardGrid{
     @apply w-1/2;
 }
-
 .cell {
     @apply border border-black border-solid text-center;
     width: 100px;
