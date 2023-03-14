@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply transition-all duration-200 delay-75 ease-in-out;
+}
+.mainContainer {
+    @apply flex w-full h-full flex-col items-center;
+}
+.mainHeader {
+    @apply flex w-full flex-row h-8;
+    background:pink;
+}
+.appControl {
+    @apply flex w-full flex-row items-center content-center justify-center;
+    background:#eaeaea;
+    height: inherit;
+}
+.mainInner {
+    @apply flex flex-row items-center justify-center content-center;
+    width: 1600px;
+    max-width: 1600px;
+    min-height: calc(100vh - 80px);
+    background:lightskyblue;
+}
+.playerHudContainer {
+    @apply flex flex-row flex-wrap;
+    width:800px;
+    max-width: 800px;
+}
+.playerHud {
+    @apply flex;
+    width:100%;
+}
+.gameBoard{
+    width:900px;
+    height:900px;
+    background:seagreen;
+}
+.boardGrid {
+    margin: 100px;
+}
+.cell {
+    @apply border border-black border-solid text-center;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 640px) {
+    .mainHeader {
+        @apply h-12;
+    }
+    .mainInner {
+        width: 768px;
+        max-width: 768px;
+        min-height: calc(100vh - 80px);
+    }
+    .playerHudContainer {
+        width:190px;
+        max-width: 190px;
+    }
+    .gameBoard{
+        width:450px;
+        height:450px;
+    }
+    .boardGrid {
+        margin: 50px;
+    }
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 768px) {
+    .mainHeader {
+        @apply h-12;
+    }
+    .mainInner {
+        width: 768px;
+        max-width: 768px;
+        min-height: calc(100vh - 80px);
+    }
+    .playerHudContainer {
+        width:228px;
+        max-width: 228px;
+    }
+    .gameBoard{
+        width:540px;
+        height:540px;
+    }
+    .boardGrid {
+        margin: 60px;
+    }
+    .cell {
+        width: 60px;
+        height: 60px;
+    } 
+}
+@media (min-width: 1024px) {
+    .mainHeader {
+        @apply h-14;
+    }
+    .mainInner {
+        width: 1024px;
+        max-width: 1024px;
+        min-height: calc(100vh - 80px);
+    }
+    .playerHudContainer {
+        width:349px;
+        max-width: 349px;
+    }
+    .playerHud {
+        @apply flex;
+        width:50%;
+    }
+    .gameBoard{
+        width:675px;
+        height:675px;
+    }
+    .boardGrid {
+        margin: 75px;
+    }
+    .cell {
+        width: 75px;
+        height: 75px;
+    } 
+}	
+@media (min-width: 1280px) {
+    .mainHeader {
+        @apply h-16;
+    }
+    .mainInner {
+        width: 1200px;
+        max-width: 1200px;
+        min-height: calc(100vh - 80px);
+    }
+    .playerHudContainer {
+        width:480px;
+        max-width: 480px;
+    }
+    .gameBoard{
+        width:720px;
+        height:720px;
+    }
+    .boardGrid {
+        margin: 80px;
+    }
+    .cell {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (min-width: 1536px) {
+    .mainHeader {
+        @apply h-20;
+    }
+    .mainInner {
+        width: 1600px;
+        max-width: 1600px;
+        min-height: calc(100vh - 80px);
+    }
+    .playerHudContainer {
+        width:800px;
+        max-width: 800px;
+    }
+    .gameBoard{
+        width:900px;
+        height:900px;
+    }
+    .boardGrid {
+        margin: 100px;
+    }
+    .cell {
+        width: 100px;
+        height: 100px;
+    }
+}
